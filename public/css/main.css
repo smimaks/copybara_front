@@ -27,6 +27,15 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+.amount, .price, .send, .goods {
+    margin-top: 15px;
+    font-size: large;
+    height: 35px;
+    width: 250px;
+    border-radius: 3px;
+}
+
 .content {
     width: 60%;
     border-left: 1px black solid;
@@ -50,3 +59,4 @@ body {
     border-right: 1px solid black;
 
 }
+
