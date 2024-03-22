@@ -28,7 +28,14 @@ body {
     align-items: center;
 }
 
-.amount, .price, .send, .goods {
+.amount, .price{
+
+    font-size: large;
+    height: 35px;
+    width: 250px;
+    border-radius: 3px;
+}
+.send, .goods, .approve {
     margin-top: 15px;
     font-size: large;
     height: 35px;
@@ -55,8 +62,16 @@ body {
     
 }
 .element_count {
+    padding-left: 10px;
+    padding-right: 10px;
     border-left: 1px solid black;
     border-right: 1px solid black;
-
+}
+.element_price {
+    padding-right: 25px;
 }
 
+label {
+    margin-top: 10px;
+    font-size: 20px;
+}
