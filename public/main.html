@@ -14,30 +14,47 @@
         <div class="content_wrapper">
             <div class="form">
                 <select name="goods" id="goods" class="goods">
-                    <option value="goods 1">Lorem, ipsum dolor.</option>
-                    <option value="goods 2">Lorem ipsum dolor sit.</option>
-                    <option value="goods 3">Lorem ipsum dolor sit.</option>
-                    <option value="goods 4">Lorem ipsum dolor sit.</option>
-                    <option value="goods 5">Lorem ipsum dolor sit.</option>
+                    <option value="goods 1">Печать ч/б А4</option>
+                    <option value="goods 2">Печать цвет А4</option>
+                    <option value="goods 3">Фото А6</option>
+                    <option value="goods 4">Фото А4</option>
+                    <option value="goods 5">Фото А3</option>
+                    <option value="goods 6">Фото на документы</option>
+                    <option value="goods 7">Ламинация</option>
 
                 </select>
                 <label for="amount">Количество </label>
                 <input type="number" class="amount" id="amount">
                 <label for='price'>Цена</label>
                 <input type="number" class="price" id="price">
-                <input type="button" class="send" id="send" value="send">
+                <input type="button" class="record_save" id="send" value="send">
             </div>
             <div class="content">
-                <ul>
-                    <li><div class="element_wrapper">
-                        <div class="element_title">Lorem ipsum dolor sit amet.</div>
-                        <div class="element_count">40</div>
-                        <div class="element_price">10</div>
-                    </div></li>
-                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, quis.</li>
-                    <li>Lorem, ipsum dolor.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel!</li>
+<!--                 <div class='element_titles'> -->
+<!--                     <h3 class='title'>Наименование</h3> -->
+<!--                     <h3 class='amount'>Количество</h3> -->
+<!--                     <h3 class='sum'>Сумма</h3> -->
+<!--                 </div> -->
+
+                <ul class='service_list'>
+<!--                     <li> -->
+<!--                         <div class="element_wrapper" id='test'> -->
+<!--                         <div class="element_title">Lorem ipsum dolor sit 2.</div> -->
+<!--                         <div class="element_count">40</div> -->
+<!--                         <div class="element_price">10</div> -->
+<!--                         </div> -->
+<!--                     </li> -->
+<!--                     <li> -->
+<!--                         <div class="element_wrapper" id='test2'> -->
+<!--                         <div class="element_title">Lorem ipsum dolor sit 1.</div> -->
+<!--                         <div class="element_count">21</div> -->
+<!--                         <div class="element_price">32</div> -->
+<!--                     </div> -->
+<!--                     </li> -->
+<!--                     <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, quis.</li> -->
+<!--                     <li>Lorem, ipsum dolor.</li> -->
+<!--                     <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li> -->
+<!--                     <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel!</li> -->
                 </ul>
                 <input type="button" class="approve" id="approve" value="send">
             </div>
@@ -47,5 +64,6 @@
             <h2>Coby-Bara FOOTER</h2>
         </footer>
     </div>
+    <script type='module' src='../src/records.js'></script>
 </body>
 </html>

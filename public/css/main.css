@@ -35,7 +35,7 @@ body {
     width: 250px;
     border-radius: 3px;
 }
-.send, .goods, .approve {
+.record_save, .goods, .approve {
     margin-top: 15px;
     font-size: large;
     height: 35px;
@@ -47,13 +47,17 @@ body {
     width: 60%;
     border-left: 1px black solid;
 }
+.service_list {
+    list-style-type: none;
+}
 
 .element_wrapper {
-    border: 1px black solid;
+    border-bottom: 1px black solid;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-right: 100px;
+    margin-right: 130px;
+    cursor: pointer;
 }
 .element_wrapper > div {
     display: flex;
@@ -62,13 +66,21 @@ body {
     
 }
 .element_count {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
     border-left: 1px solid black;
     border-right: 1px solid black;
 }
 .element_price {
-    padding-right: 25px;
+    padding-right: 50px;
+    padding-left: 50px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.element_delete {
+    padding-right: 80px;
+    margin-right: 80px;
 }
 
 label {
