@@ -33,4 +33,9 @@ export class View {
     elementList.appendChild(wrapper);
     list.appendChild(elementList);
   }
+
+  addSumToList(sum) {
+    const span = document.querySelector('.sum');
+    span.innerText = sum;
+  }
 }

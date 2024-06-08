@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <link rel="stylesheet" href="../public/css/main.css">
+  <title>Expenses</title>
+</head>
+<body>
+<div class='wrapper'>
+  <header>
+    <h2>Expenses</h2>
+  </header>
+  <div class='content_wrapper'>
+    <div class="form">
+      <select name="goods" id="goods" class="goods">
+        <option value="goods 1">Аренда</option>
+        <option value="goods 2">Интернет</option>
+        <option value="goods 3">Бумага</option>
+        <option value="goods 4">Фото бумага</option>
+        <option value="goods 5">Фото А3</option>
+        <option value="goods 6">Фото на документы</option>
+        <option value="goods 7">Ламинация</option>
+
+      </select>
+      <label for="amount">Количество </label>
+      <input type="number" class="amount" id="amount">
+      <label for='price'>Цена</label>
+      <input type="number" class="price" id="price">
+      <input type="button" class="record_save" id="send" value="send">
+    </div>
+
+    <div class="content">
+      <ul class='service_list'></ul>
+      <div class='content_footer'>
+
+        <input type="button" class="approve" id="approve" value="send">
+        <span class='sum'></span>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <h2>Coby-Bara FOOTER</h2>
+  </footer>
+</div>
+</body>
+</html>

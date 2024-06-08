@@ -20,11 +20,7 @@ export class Controller {
       const item = this.#getServiceRecordValues();
       const result = await this.model.saveRecord(item);
       this.view.buildServiceRecord(result);
-      const element = document.querySelector('.element_wrapper');
-      element.addEventListener('click', async event => {
-        await this.deleteServiceFromList(event.target.id);
-        event.target.parentElement.parentNode.innerText = '';
-      });
+      await this.addListenerForDeleteItem();
     } catch (e) {
       console.log(e);
     }
@@ -55,10 +51,12 @@ export class Controller {
   }
 
   #getServiceRecordValues() {
-    const element = document.querySelector('.goods');
+    const serviceTitle = document.querySelector('.goods');
     const amount = document.querySelector('.amount').value;
     const price = document.querySelector('.price').value;
-    return { title: element.options[element.selectedIndex].text, amount, price };
+    const title = serviceTitle.options[serviceTitle.selectedIndex].text;
+    if (!amount || !price || !title) throw new Error('Missing required field!');
+    return { title, amount, price };
   }
 
   #getAllRecordsItems() {
@@ -78,5 +76,24 @@ export class Controller {
       });
     });
     return itemsToSave;
+  }
+
+  calcSum() {
+    const allItems = this.#getAllRecordsItems();
+    const sum = allItems.reduce((sum, item) => {
+      return sum + item.price;
+    }, 0);
+    this.view.addSumToList(sum);
+  }
+
+  async addListenerForDeleteItem() {
+    // add event to wrapper for delete item from list
+    const elements = document.querySelectorAll('.element_wrapper');
+    elements.forEach(el => {
+      el.addEventListener('click', async event => {
+        await this.deleteServiceFromList(event.target.id);
+        event.target.remove();
+      });
+    });
   }
 }

@@ -46,6 +46,7 @@ body {
 .content {
     width: 60%;
     border-left: 1px black solid;
+
 }
 .service_list {
     list-style-type: none;
@@ -66,12 +67,14 @@ body {
     
 }
 .element_count {
+    font-size: 18px;
     padding-left: 25px;
     padding-right: 25px;
     border-left: 1px solid black;
     border-right: 1px solid black;
 }
 .element_price {
+    font-size: 18px;
     padding-right: 50px;
     padding-left: 50px;
     border-left: 1px solid black;
@@ -81,6 +84,17 @@ body {
 .element_delete {
     padding-right: 80px;
     margin-right: 80px;
+}
+.content_footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sum {
+    font-size: 20px;
+    display: block;
+    margin-top: 15px;
+    margin-right: 150px;
 }
 
 label {
